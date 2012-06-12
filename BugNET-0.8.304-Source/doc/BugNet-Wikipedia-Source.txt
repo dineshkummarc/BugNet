@@ -1,0 +1,115 @@
+{{COI}}
+{{ infobox Software
+| name                   = BugNET
+| logo                   = [[Image:Bugnetlogo.png]]
+| screenshot             = 
+| caption                = 
+| developer              = Davin Dubeau
+| latest_release_version = 0.7.942.0
+| latest_release_date    = {{release date and age|2009|6|20}}
+| latest_test_version    = 0.8.188.0 RC3
+| latest_test_date       = {{release date and age|2010|5|2}}
+| operating_system       = [[Microsoft Windows]]
+| operating_system_desc  = 
+| genre                  = [[Bug tracking system]]
+| license                = [[GNU General Public License]]
+| website                = http://bugnetproject.com/
+}}
+'''BugNET''' is a free [[open source]] web-based [[bug tracking system]] and customer support [[issue tracking system]]. 
+
+
+==History and Licensing==
+BugNET is [[free software]], licensed under the terms of the [[GNU General Public License]] (GPL).  It is built on other open source software the:  the rich text editor [[CKEditor]], the javascript library [[jQuery]].
+
+It was created by Davin Dubeau starting in 2006, using [[ASP.NET]], [[C Sharp (programming language)|C#]], and [[Microsoft SQL Server]]. It is capable of being run on Windows XP, with IIS 6, and SQL Express 2005.
+
+==Features of the Software==
+
+BugNET is an issue tracking and project issue management solution built using the ASP.NET web application framework. A number of enterprise level features are available. 
+
+Email notifications, reporting and per project configuration of fields and values allows efficient management of bugs, feature requests, and other issues for projects of any scale.<ref name="whatisbugnet">{{cite web |date=2010-05-05 |title=What is BugNET?|publisher=BugNET Davin Dubeau|url=http://bugnetproject.com/ |accessdate=2010-05-05 }}</ref>
+
+The main goals are to keep the codebase simple, well documented, easy to deploy and scalable.<ref name="devgoals">{{cite web |date=2010-05-05 |title=BugNET development goals|publisher=BugNET tekhorror |url=http://sourceforge.net/projects/bugnet/ |accessdate=2010-05-05 }}</ref> 
+
+It supports version control integration with the open source version control systems [[Subversion (software)|Subversion]]<ref>{{cite web|author=Davin Dubeau|title=Subversion Integration Documentation|url=http://www.bugnetproject.com/Documentation/tabid/57/Default.aspx?topic=Subversion+Integration}}</ref>.
+
+Features include<ref name="reffeatures">{{cite web |date=2010-05-05 |title=BugNET feature list|publisher=BugNET Davin Dubeau |url=http://bugnetproject.com/Documentation/tabid/57/topic/Features/Default.aspx |accessdate=2010-05-05 }}</ref>:
+* Support for multiple databases.
+* Multiple project support.
+* Lock out front-line support staff so they can only report issues.
+* Ability to assign a deadline to an issue and give a time estimate up-front.
+* Custom fields allow custom attributes to be added to issues.
+* Customers and users can submit issues via email.
+* WYSIWYG editor for comments and issue descriptions.
+* Detailed history of changes on an issue.
+* Attach files to issues.
+* Issue linking.
+* Change notification monitoring.
+* Ability to custom sort and search issues via filters.
+* Reports show project metrics.
+* Export Issues lists to Microsoft Excel.
+* Time tracking allows reporting time spent on an issue.
+* RSS feeds available on each project.
+* Roadmap and Milestones.
+* Forms or Windows (Active Directory / SAM) authentication.
+* Custom user / roles / permission system configurable per project.
+* Email integration via SMTP and POP3.
+* DotNetNuke module "BugNET Link" released by Bring2Mind
+* BugNET Task Pane plug-in for Microsoft Visual Studio released by admsteck
+
+==Architecture Design==
+BugNET is a web-based system built on ASP.NET and the latest version is designed for ASP.NET 3.5 and Micsroft SQL 2005. The language used is C#. There are also elements of Javascript, XML, XSLT, AJAX in its design.
+
+BugNET is built around a set of Business Layer classes which each interface to the database using a single DataProvider abstract class. This allows for a change of database technologies without re-writing the system. 
+
+These Business Layer classes (BLLClasses) are elements which you would typically find in most bug tracking system's source code. Examples of these useful classes are Projects, Issues, Comments, Users, Permissions. 
+
+These BLLClasses can be queried in ways which are meaningful to them. For instance developers can return a list of active issues by supplying a project to the Issue.GetIssuesByProject() static method.
+
+A novel approach to querying data was added to BugNET just after the first 0.8 was created. All the Issues could be queried using a set of flexible parameters. This allows easy integration into the ASP.NET web pages, in the form of drop-down boxes. 
+
+This gave the system tremendous flexibility as every single property of an issue could be queried. Further recent enhancements in the system have extended this feature to 8 more BLLClasses. 
+
+The data is returned from the search methods available in the BLLClasses as Generic Lists. These Generic lists can be passed to any .NET Class which can accept Generic Lists. Examples are GridView control, Web Services and as XSLT parameters.
+
+
+==How the project is maintained==
+The BugNET project itself, uses a copy of BugNET 0.8 RC3 software to manage the project. Combined with blog pages and forum on its website, users and developers regularly meet and engage to resolve problems or to design new features.
+
+==Security Considerations==
+BugNET uses the ASP.NET Membership provider to authenticate and protect users. The ASP.NET Membership provider uses secure algorithms to encrypt data. It also provides account lockout, password changes and general user management features to BugNET. By limiting user to certain roles and permissions within BugNET, the administrator has control of his business process and users while knowing that it is being handled by a good security engine.
+
+The system allows the administrator to grant access to projects for anonymous users and normal users. This enables the administrator to protect the privacy of the projects and the users. Certain details on individual issues can be turned off using roles within the system. An example is turning off viewing attachments for a user.
+
+The project is [[Open Source]] and is thus open to scrutiny. Any anonymous user can download the latest source code and verify its contents. The downloaded binary files can be compared against the compiled and verified source code. This further improves and validates the security measures taken.
+
+Being open source and having a user base which is "Tech-Savy" ensures that no backdoors, logic bombs or malware is lurking in the source code.
+
+==Reviews==
+''BugNET'' has consistently received good reviews by its users. Both on its forum and on other websites.
+Users are impressed with its ease of use, good looks, powerful features and custom fields. <ref>Softpedia. [http://www.softpedia.com/get/Programming/Other-Programming-Files/BugNet.shtml "Project issue management made easy."], ''[[Softpedia]]'', May 3rd, 2010, 12:50 GMT.</ref>
+<ref>Bossmanthe. [http://bossmanthe.blogspot.com/2007/10/review-bugnet-really-great-open-source.html "Review: Bugnet - Really great open source issue tracking and project management software."], ''[[AnyArbStuff]]'', Oct 2007.</ref>
+<ref>Coding Power Unleashed. [http://beensoft.blogspot.com/2007/11/bugnet-review-download-install-and.html "BugNET review, download, install and track your issues!"], ''[[Coding Power Unleashed]]'', November 07, 2007.</ref>
+
+==See also==
+{{portal|Free software|Free Software Portal Logo.svg}}
+*[[Bug tracking system]]
+*[[Comparison of issue tracking systems]]
+
+==References==
+{{reflist}}
+
+==External links==
+*[[http://bugnetproject.com/ BugNET home page]]
+*[[http://sourceforge.net/projects/bugnettaskpane/ BugNET Task Pane plug-in for Microsoft Visual Studio]]
+*[[https://www.ohloh.net/p/bugnet BugNET OHLOH Page]]
+*[[http://sourceforge.net/projects/bugnet/ BugNET Sourceforge page]]
+*[[http://bugnetproject.com/Documentation/tabid/57/topic/Reviews/Default.aspx Third Party Reviews of BugNET]]
+
+{{Bug tracking systems}}
+
+[[Category:Bug and issue tracking software]]
+[[Category:.NET programming tools]]
+[[Category:Windows-only free software]]
+
+

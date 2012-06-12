@@ -1,0 +1,7 @@
+C:\Projects\BugNET 0.8\src\build\output\MailLicense.xml
+C:\Projects\BugNET 0.8\src\build\output\BugNET.HttpModules.MailBoxReader.XML
+C:\Projects\BugNET 0.8\src\build\output\BugNET.HttpModules.MailBoxReader.dll
+C:\Projects\BugNET 0.8\src\build\output\BugNET.HttpModules.MailBoxReader.pdb
+C:\Projects\BugNET 0.8\src\Library\HttpModules\MailBoxReader\obj\Release\ResolveAssemblyReference.cache
+C:\Projects\BugNET 0.8\src\Library\HttpModules\MailBoxReader\obj\Release\BugNET.HttpModules.MailBoxReader.dll
+C:\Projects\BugNET 0.8\src\Library\HttpModules\MailBoxReader\obj\Release\BugNET.HttpModules.MailBoxReader.pdb

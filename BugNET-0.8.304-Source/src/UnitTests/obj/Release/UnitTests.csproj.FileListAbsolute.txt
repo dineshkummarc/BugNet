@@ -1,0 +1,7 @@
+C:\Projects\BugNET 0.8\src\build\output\MailLicense.xml
+C:\Projects\BugNET 0.8\src\build\output\BugNet.UnitTests.dll.config
+C:\Projects\BugNET 0.8\src\build\output\BugNet.UnitTests.dll
+C:\Projects\BugNET 0.8\src\build\output\BugNet.UnitTests.pdb
+C:\Projects\BugNET 0.8\src\UnitTests\obj\Release\ResolveAssemblyReference.cache
+C:\Projects\BugNET 0.8\src\UnitTests\obj\Release\BugNet.UnitTests.dll
+C:\Projects\BugNET 0.8\src\UnitTests\obj\Release\BugNet.UnitTests.pdb

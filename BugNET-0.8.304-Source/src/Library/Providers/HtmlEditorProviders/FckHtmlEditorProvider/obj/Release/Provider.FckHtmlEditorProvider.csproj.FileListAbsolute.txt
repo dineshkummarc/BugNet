@@ -1,0 +1,6 @@
+C:\Projects\BugNET 0.8\src\build\output\BugNET.Providers.FckHtmlEditorProvider.XML
+C:\Projects\BugNET 0.8\src\build\output\BugNET.Providers.FckHtmlEditorProvider.dll
+C:\Projects\BugNET 0.8\src\build\output\BugNET.Providers.FckHtmlEditorProvider.pdb
+C:\Projects\BugNET 0.8\src\Library\Providers\HtmlEditorProviders\FckHtmlEditorProvider\obj\Release\ResolveAssemblyReference.cache
+C:\Projects\BugNET 0.8\src\Library\Providers\HtmlEditorProviders\FckHtmlEditorProvider\obj\Release\BugNET.Providers.FckHtmlEditorProvider.dll
+C:\Projects\BugNET 0.8\src\Library\Providers\HtmlEditorProviders\FckHtmlEditorProvider\obj\Release\BugNET.Providers.FckHtmlEditorProvider.pdb

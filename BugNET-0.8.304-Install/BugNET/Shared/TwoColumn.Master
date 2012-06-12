@@ -1,0 +1,45 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="TwoColumn.master.cs" Inherits="BugNET.TwoColumn" %>
+<%@ Register Src="~/UserControls/Banner.ascx" TagName="Banner" TagPrefix="bn" %>
+<%@ Register Src="~/UserControls/Footer.ascx" TagName="Footer" TagPrefix="bn" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-us" xml:lang="en-us" >
+    <head id="Head" runat="server">
+        <title>Untitled Page</title>   
+    </head>
+    <body>
+        <div id="container">  
+            <form id="form1" runat="server">
+                <ajaxToolkit:ToolkitScriptManager ID="ScriptManager1" runat="server"  EnablePageMethods="true">
+                  <Services>
+                    <asp:ServiceReference Path="~/Webservices/BugNetServices.asmx" />
+                  </Services>
+                </ajaxToolkit:ToolkitScriptManager>
+                 <asp:contentplaceholder id="Banner" runat="server">
+                    <bn:banner ID="Banner1" runat="server" />
+                 </asp:contentplaceholder> 
+
+                <div id="pagetitle">
+                    <asp:contentplaceholder id="PageTitle" runat="server">
+                   
+                    </asp:contentplaceholder>
+                </div>
+
+                <div id="left">
+                    <asp:contentplaceholder id="Left" runat="server">
+                   
+                    </asp:contentplaceholder>
+                </div>
+               
+                <div id="content">
+                    <asp:contentplaceholder id="Content" runat="server">
+                    </asp:contentplaceholder>
+                </div>
+   
+               <div id="footer">
+				    <bn:footer ID="Footer1" runat="server" />
+		        </div>
+            </form>
+        </div>
+    </body>
+</html>

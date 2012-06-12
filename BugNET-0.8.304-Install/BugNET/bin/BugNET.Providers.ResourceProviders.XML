@@ -1,0 +1,194 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BugNET.Providers.ResourceProviders</name>
+    </assembly>
+    <members>
+        <member name="T:BugNET.Providers.ResourceProviders.DBResourceProvider">
+            <summary>
+            Resource provider accessing resources from the database.
+            This type is thread safe.
+            </summary>
+        </member>
+        <member name="M:BugNET.Providers.ResourceProviders.DBResourceProvider.#ctor(System.String)">
+            <summary>
+            Constructs this instance of the provider 
+            supplying a resource type for the instance. 
+            </summary>
+            <param name="resourceType">The resource type.</param>
+        </member>
+        <member name="M:BugNET.Providers.ResourceProviders.DBResourceProvider.GetObject(System.String,System.Globalization.CultureInfo)">
+            <summary>
+            Retrieves a resource entry based on the specified culture and 
+            resource key. The resource type is based on this instance of the
+            DBResourceProvider as passed to the constructor.
+            To optimize performance, this function caches values in a dictionary
+            per culture.
+            </summary>
+            <param name="resourceKey">The resource key to find.</param>
+            <param name="culture">The culture to search with.</param>
+            <returns>If found, the resource string is returned. 
+            Otherwise an empty string is returned.</returns>
+        </member>
+        <member name="P:BugNET.Providers.ResourceProviders.DBResourceProvider.ResourceReader">
+            <summary>
+            Returns a resource reader.
+            </summary>
+        </member>
+        <member name="T:BugNET.Providers.ResourceProviders.DBResourceReader">
+            <summary>
+            Implementation of IResourceReader required to retrieve a dictionary
+            of resource values for implicit localization. 
+            </summary>
+        </member>
+        <member name="M:BugNET.Providers.ResourceProviders.DBResourceReader.#ctor(System.Collections.Specialized.ListDictionary)">
+            <summary>
+            Initializes a new instance of the <see cref="T:BugNET.Providers.ResourceProviders.DBResourceReader"/> class.
+            </summary>
+            <param name="resourceDictionary">The resource dictionary.</param>
+        </member>
+        <member name="M:BugNET.Providers.ResourceProviders.DBResourceReader.Cleanup">
+            <summary>
+            Cleanups this instance.
+            </summary>
+        </member>
+        <member name="M:BugNET.Providers.ResourceProviders.DBResourceReader.Close">
+            <summary>
+            Closes the resource reader after releasing any resources associated with it.
+            </summary>
+        </member>
+        <member name="M:BugNET.Providers.ResourceProviders.DBResourceReader.GetEnumerator">
+            <summary>
+            Returns an <see cref="T:System.Collections.IDictionaryEnumerator"/> of the resources for this reader.
+            </summary>
+            <returns>
+            A dictionary enumerator for the resources for this reader.
+            </returns>
+        </member>
+        <member name="M:BugNET.Providers.ResourceProviders.DBResourceReader.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through a collection.
+            </summary>
+            <returns>
+            An <see cref="T:System.Collections.IEnumerator"/> object that can be used to iterate through the collection.
+            </returns>
+        </member>
+        <member name="M:BugNET.Providers.ResourceProviders.DBResourceReader.System#Collections#Generic#IEnumerable{System#Collections#Generic#KeyValuePair{System#String@System#Object}}#GetEnumerator">
+            <summary>
+            Returns an enumerator that iterates through the collection.
+            </summary>
+            <returns>
+            A <see cref="T:System.Collections.Generic.IEnumerator`1"/> that can be used to iterate through the collection.
+            </returns>
+        </member>
+        <member name="T:BugNET.Providers.ResourceProviders.Properties.Resources">
+            <summary>
+              A strongly-typed resource class, for looking up localized strings, etc.
+            </summary>
+        </member>
+        <member name="P:BugNET.Providers.ResourceProviders.Properties.Resources.ResourceManager">
+            <summary>
+              Returns the cached ResourceManager instance used by this class.
+            </summary>
+        </member>
+        <member name="P:BugNET.Providers.ResourceProviders.Properties.Resources.Culture">
+            <summary>
+              Overrides the current thread's CurrentUICulture property for all
+              resource lookups using this strongly typed resource class.
+            </summary>
+        </member>
+        <member name="P:BugNET.Providers.ResourceProviders.Properties.Resources.Expression_TooFewParameters">
+            <summary>
+              Looks up a localized string similar to Too few parameters: {0}. Must provide a resource assembly name, resource type and resource key in the format &apos;[AssemblyName]|[ResourceType], ResourceKey&apos;..
+            </summary>
+        </member>
+        <member name="P:BugNET.Providers.ResourceProviders.Properties.Resources.Expression_TooManyParameters">
+            <summary>
+              Looks up a localized string similar to Too many parameters: {0}. Must provide a resource assembly name, resource type and resouce key in the format &apos;[AssemblyName]|[ResourceType], ResourceKey&apos;..
+            </summary>
+        </member>
+        <member name="P:BugNET.Providers.ResourceProviders.Properties.Resources.Provider_InvalidConstructor">
+            <summary>
+              Looks up a localized string similar to Parameter invalid: {0}. Must provide a resource assembly name and resource type in the format &apos;[AssemblyName]|[ResourceType]&apos;..
+            </summary>
+        </member>
+        <member name="P:BugNET.Providers.ResourceProviders.Properties.Resources.Provider_LocalResourcesNotSupported">
+            <summary>
+              Looks up a localized string similar to {0} does not support local resources..
+            </summary>
+        </member>
+        <member name="P:BugNET.Providers.ResourceProviders.Properties.Resources.RM_DefaultResourceNotFound">
+            <summary>
+              Looks up a localized string similar to Unable to find a default resource for {0}..
+            </summary>
+        </member>
+        <member name="P:BugNET.Providers.ResourceProviders.Properties.Resources.RM_DuplicateResourceFound">
+            <summary>
+              Looks up a localized string similar to An internal data error has occurred. A duplicate resource entry was found for {0}..
+            </summary>
+        </member>
+        <member name="P:BugNET.Providers.ResourceProviders.Properties.Resources.RM_ResourceNotFound">
+            <summary>
+              Looks up a localized string similar to Resource not found: {0}.
+            </summary>
+        </member>
+        <member name="T:BugNET.Providers.ResourceProviders.StringResourcesDALC">
+            <summary>
+            Data access component for the StringResources table. 
+            This type is thread safe.
+            </summary>
+        </member>
+        <member name="M:BugNET.Providers.ResourceProviders.StringResourcesDALC.#ctor(System.String)">
+            <summary>
+            Constructs this instance of the data access 
+            component supplying a resource type for the instance. 
+            </summary>
+            <param name="resourceType">The resource type.</param>
+        </member>
+        <member name="M:BugNET.Providers.ResourceProviders.StringResourcesDALC.GetResourceByCultureAndKeyInternal(System.Globalization.CultureInfo,System.String)">
+            <summary>
+            Uses an open database connection to recurse 
+            looking for the resource.
+            Retrieves a resource entry based on the 
+            specified culture and resource 
+            key. The resource type is based on this instance of the
+            StringResourceDALC as passed to the constructor.
+            Resource fallback follows the same mechanism 
+            of the .NET 
+            ResourceManager. Ultimately falling back to the 
+            default resource
+            specified in this class.
+            </summary>
+            <param name="culture">The culture to search with.</param>
+            <param name="resourceKey">The resource key to find.</param>
+            <returns>If found, the resource string is returned. 
+            Otherwise an empty string is returned.</returns>
+        </member>
+        <member name="M:BugNET.Providers.ResourceProviders.StringResourcesDALC.GetResourcesByCulture(System.Globalization.CultureInfo)">
+            <summary>
+            Returns a dictionary type containing all resources for a 
+            particular resource type and culture.
+            The resource type is based on this instance of the
+            StringResourceDALC as passed to the constructor.
+            </summary>
+            <param name="culture">The culture to search for.</param>
+            <param name="resourceKey">The resource key to 
+            search for.</param>
+            <returns>If found, the dictionary contains key/value 
+            pairs for each 
+            resource for the specified culture.</returns>
+        </member>
+        <member name="M:BugNET.Providers.ResourceProviders.StringResourcesDALC.GetResourceByCultureAndKey(System.Globalization.CultureInfo,System.String)">
+            <summary>
+            Retrieves a resource entry based on the specified culture and 
+            resource key. The resource type is based on this instance of the
+            StringResourceDALC as passed to the constructor.
+            To optimize performance, this function opens the database connection 
+            before calling the internal recursive function. 
+            </summary>
+            <param name="culture">The culture to search with.</param>
+            <param name="resourceKey">The resource key to find.</param>
+            <returns>If found, the resource string is returned. Otherwise an empty string is returned.</returns>
+        </member>
+    </members>
+</doc>

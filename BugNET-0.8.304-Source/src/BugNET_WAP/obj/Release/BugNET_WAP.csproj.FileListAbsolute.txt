@@ -1,0 +1,11 @@
+C:\Projects\BugNET 0.8\src\build\output\MailLicense.xml
+C:\Projects\BugNET 0.8\src\build\output\BugNET.XML
+C:\Projects\BugNET 0.8\src\build\output\BugNET.dll
+C:\Projects\BugNET 0.8\src\build\output\BugNET.pdb
+C:\Projects\BugNET 0.8\src\BugNET_WAP\obj\Release\ResolveAssemblyReference.cache
+C:\Projects\BugNET 0.8\src\BugNET_WAP\obj\Release\BugNET.Administration.Projects.UserControls.ProjectPriorities.resources
+C:\Projects\BugNET 0.8\src\BugNET_WAP\obj\Release\BugNET.Administration.Projects.UserControls.ProjectStatus.resources
+C:\Projects\BugNET 0.8\src\BugNET_WAP\obj\Release\GenerateResource-ResGen.read.1.tlog
+C:\Projects\BugNET 0.8\src\BugNET_WAP\obj\Release\GenerateResource-ResGen.write.1.tlog
+C:\Projects\BugNET 0.8\src\BugNET_WAP\obj\Release\BugNET.dll
+C:\Projects\BugNET 0.8\src\BugNET_WAP\obj\Release\BugNET.pdb

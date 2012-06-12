@@ -1,0 +1,6 @@
+C:\Projects\BugNET 0.8\src\build\output\BugNET.Providers.MembershipProviders.ExtendedSqlMembershipProvider.XML
+C:\Projects\BugNET 0.8\src\build\output\BugNET.Providers.MembershipProviders.ExtendedSqlMembershipProvider.dll
+C:\Projects\BugNET 0.8\src\build\output\BugNET.Providers.MembershipProviders.ExtendedSqlMembershipProvider.pdb
+C:\Projects\BugNET 0.8\src\Library\Providers\MembershipProviders\obj\Release\ResolveAssemblyReference.cache
+C:\Projects\BugNET 0.8\src\Library\Providers\MembershipProviders\obj\Release\BugNET.Providers.MembershipProviders.ExtendedSqlMembershipProvider.dll
+C:\Projects\BugNET 0.8\src\Library\Providers\MembershipProviders\obj\Release\BugNET.Providers.MembershipProviders.ExtendedSqlMembershipProvider.pdb

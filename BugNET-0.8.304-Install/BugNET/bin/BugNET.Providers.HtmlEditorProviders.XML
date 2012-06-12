@@ -1,0 +1,81 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BugNET.Providers.HtmlEditorProviders</name>
+    </assembly>
+    <members>
+        <member name="M:BugNET.Providers.HtmlEditorProviders.Common.ResolveUrl(System.String)">
+            <summary>
+            Returns a site relative HTTP path from a partial path starting out with a ~.
+            Same syntax that ASP.Net internally supports but this method can be used
+            outside of the Page framework.
+            
+            Works like Control.ResolveUrl including support for ~ syntax
+            but returns an absolute URL.
+            </summary>
+            <param name="originalUrl">Any Url including those starting with ~</param>
+            <returns>relative url</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "T:BugNET.Providers.HtmlEditorProviders.HtmlEditorConfiguration" -->
+        <member name="P:BugNET.Providers.HtmlEditorProviders.HtmlEditorConfiguration.Providers">
+            <summary>
+            Gets the providers.
+            </summary>
+            <value>The providers.</value>
+        </member>
+        <member name="P:BugNET.Providers.HtmlEditorProviders.HtmlEditorConfiguration.DefaultProvider">
+            <summary>
+            Gets or sets the default provider.
+            </summary>
+            <value>The default provider.</value>
+        </member>
+        <member name="M:BugNET.Providers.HtmlEditorProviders.HtmlEditorManager.#cctor">
+            <summary>
+            Initializes the <see cref="T:BugNET.Providers.HtmlEditorProviders.HtmlEditorManager"/> class.
+            </summary>
+        </member>
+        <member name="M:BugNET.Providers.HtmlEditorProviders.HtmlEditorManager.Initialize">
+            <summary>
+            Initializes this instance.
+            </summary>
+        </member>
+        <member name="P:BugNET.Providers.HtmlEditorProviders.HtmlEditorManager.Provider">
+            <summary>
+            Gets the provider.
+            </summary>
+            <value>The provider.</value>
+        </member>
+        <member name="P:BugNET.Providers.HtmlEditorProviders.HtmlEditorManager.Providers">
+            <summary>
+            Gets the providers.
+            </summary>
+            <value>The providers.</value>
+        </member>
+        <member name="M:BugNET.Providers.HtmlEditorProviders.HtmlEditorProviderCollection.Add(System.Configuration.Provider.ProviderBase)">
+            <summary>
+            Adds a provider to the collection.
+            </summary>
+            <param name="provider">The provider to be added.</param>
+            <exception cref="T:System.NotSupportedException">The collection is read-only.</exception>
+            <exception cref="T:System.ArgumentNullException">
+            	<paramref name="provider"/> is null.</exception>
+            <exception cref="T:System.ArgumentException">The <see cref="P:System.Configuration.Provider.ProviderBase.Name"/> of <paramref name="provider"/> is null.- or -The length of the <see cref="P:System.Configuration.Provider.ProviderBase.Name"/> of <paramref name="provider"/> is less than 1.</exception>
+            <PermissionSet>
+            	<IPermission class="System.Security.Permissions.SecurityPermission, mscorlib, Version=2.0.3600.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" version="1" Flags="UnmanagedCode, ControlEvidence"/>
+            </PermissionSet>
+        </member>
+        <member name="M:BugNET.Providers.HtmlEditorProviders.HtmlEditorProviderCollection.CopyTo(BugNET.Providers.HtmlEditorProviders.HtmlEditorProvider[],System.Int32)">
+            <summary>
+            Copies to.
+            </summary>
+            <param name="array">The array.</param>
+            <param name="index">The index.</param>
+        </member>
+        <member name="P:BugNET.Providers.HtmlEditorProviders.HtmlEditorProviderCollection.Item(System.String)">
+            <summary>
+            Gets the <see cref="!:BugNET.Providers.HtmlEditorProvider.HtmlEditorProvider"/> with the specified name.
+            </summary>
+            <value></value>
+        </member>
+    </members>
+</doc>

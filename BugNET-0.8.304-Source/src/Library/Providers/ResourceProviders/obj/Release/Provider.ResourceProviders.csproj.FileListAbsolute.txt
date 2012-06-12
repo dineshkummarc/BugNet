@@ -1,0 +1,9 @@
+C:\Projects\BugNET 0.8\src\build\output\BugNET.Providers.ResourceProviders.XML
+C:\Projects\BugNET 0.8\src\build\output\BugNET.Providers.ResourceProviders.dll
+C:\Projects\BugNET 0.8\src\build\output\BugNET.Providers.ResourceProviders.pdb
+C:\Projects\BugNET 0.8\src\Library\Providers\ResourceProviders\obj\Release\ResolveAssemblyReference.cache
+C:\Projects\BugNET 0.8\src\Library\Providers\ResourceProviders\obj\Release\BugNET.Providers.ResourceProviders.Properties.Resources.resources
+C:\Projects\BugNET 0.8\src\Library\Providers\ResourceProviders\obj\Release\GenerateResource-ResGen.read.1.tlog
+C:\Projects\BugNET 0.8\src\Library\Providers\ResourceProviders\obj\Release\GenerateResource-ResGen.write.1.tlog
+C:\Projects\BugNET 0.8\src\Library\Providers\ResourceProviders\obj\Release\BugNET.Providers.ResourceProviders.dll
+C:\Projects\BugNET 0.8\src\Library\Providers\ResourceProviders\obj\Release\BugNET.Providers.ResourceProviders.pdb

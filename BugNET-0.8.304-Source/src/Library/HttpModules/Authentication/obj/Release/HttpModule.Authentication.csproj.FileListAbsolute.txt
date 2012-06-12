@@ -1,0 +1,7 @@
+C:\Projects\BugNET 0.8\src\build\output\MailLicense.xml
+C:\Projects\BugNET 0.8\src\build\output\BugNET.HttpModules.Authentication.XML
+C:\Projects\BugNET 0.8\src\build\output\BugNET.HttpModules.Authentication.dll
+C:\Projects\BugNET 0.8\src\build\output\BugNET.HttpModules.Authentication.pdb
+C:\Projects\BugNET 0.8\src\Library\HttpModules\Authentication\obj\Release\ResolveAssemblyReference.cache
+C:\Projects\BugNET 0.8\src\Library\HttpModules\Authentication\obj\Release\BugNET.HttpModules.Authentication.dll
+C:\Projects\BugNET 0.8\src\Library\HttpModules\Authentication\obj\Release\BugNET.HttpModules.Authentication.pdb

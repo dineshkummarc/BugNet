@@ -1,0 +1,6 @@
+C:\Projects\BugNET 0.8\src\build\output\BugNET.Providers.CkHtmlEditorProvider.xml
+C:\Projects\BugNET 0.8\src\build\output\BugNET.Providers.CkHtmlEditorProvider.dll
+C:\Projects\BugNET 0.8\src\build\output\BugNET.Providers.CkHtmlEditorProvider.pdb
+C:\Projects\BugNET 0.8\src\Library\Providers\HtmlEditorProviders\CkHtmlEditorProvider\obj\Release\ResolveAssemblyReference.cache
+C:\Projects\BugNET 0.8\src\Library\Providers\HtmlEditorProviders\CkHtmlEditorProvider\obj\Release\BugNET.Providers.CkHtmlEditorProvider.dll
+C:\Projects\BugNET 0.8\src\Library\Providers\HtmlEditorProviders\CkHtmlEditorProvider\obj\Release\BugNET.Providers.CkHtmlEditorProvider.pdb

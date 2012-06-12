@@ -1,0 +1,77 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BugNET.HttpModules.Authentication</name>
+    </assembly>
+    <members>
+        <member name="T:BugNET.HttpModules.AuthenticationModule">
+            <summary>
+            BugNET Authentication HttpModule
+            </summary>
+        </member>
+        <member name="M:BugNET.HttpModules.AuthenticationModule.Dispose">
+            <summary>
+            Disposes of the resources (other than memory) used by the module that implements <see cref="T:System.Web.IHttpModule"></see>.
+            </summary>
+        </member>
+        <member name="M:BugNET.HttpModules.AuthenticationModule.Init(System.Web.HttpApplication)">
+            <summary>
+            Initializes a module and prepares it to handle requests.
+            </summary>
+            <param name="context">An <see cref="T:System.Web.HttpApplication"></see> that provides access to the methods, properties, and events common to all application objects within an ASP.NET application</param>
+        </member>
+        <member name="M:BugNET.HttpModules.AuthenticationModule.context_AuthenticateRequest(System.Object,System.EventArgs)">
+            <summary>
+            Handles the AuthenticateRequest event of the context control.
+            </summary>
+            <param name="sender">The source of the event.</param>
+            <param name="e">The <see cref="T:System.EventArgs"/> instance containing the event data.</param>
+        </member>
+        <member name="M:BugNET.HttpModules.AuthenticationModule.GetUserProperties(System.String)">
+            <summary>
+            Gets the users properties from the specified user store.
+            </summary>
+            <param name="identification">The identification.</param>
+            <returns>
+            Class of user properties
+            </returns>
+        </member>
+        <member name="M:BugNET.HttpModules.AuthenticationModule.SearchResultProperty(System.DirectoryServices.SearchResult,System.String)">
+            <summary>
+            Searches the result property.
+            </summary>
+            <param name="sr">The sr.</param>
+            <param name="field">The field.</param>
+            <returns></returns>
+        </member>
+        <member name="P:BugNET.HttpModules.AuthenticationModule.ModuleName">
+            <summary>
+            Gets the name of the module.
+            </summary>
+            <value>The name of the module.</value>
+        </member>
+        <member name="T:BugNET.HttpModules.UserProperties">
+            <summary>
+            A class to store the users properties fetched from an Active Directory
+            </summary>
+        </member>
+        <member name="P:BugNET.HttpModules.UserProperties.FirstName">
+            <summary>
+            Gets or sets the name of the first.
+            </summary>
+            <value>The name of the first.</value>
+        </member>
+        <member name="P:BugNET.HttpModules.UserProperties.LastName">
+            <summary>
+            Gets or sets the name of the last.
+            </summary>
+            <value>The name of the last.</value>
+        </member>
+        <member name="P:BugNET.HttpModules.UserProperties.Email">
+            <summary>
+            Gets or sets the email.
+            </summary>
+            <value>The email.</value>
+        </member>
+    </members>
+</doc>

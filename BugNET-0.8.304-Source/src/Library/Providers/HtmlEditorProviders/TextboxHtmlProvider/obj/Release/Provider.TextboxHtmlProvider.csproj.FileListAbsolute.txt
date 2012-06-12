@@ -1,0 +1,6 @@
+C:\Projects\BugNET 0.8\src\build\output\BugNET.Providers.TextboxHtmlEditorProvider.XML
+C:\Projects\BugNET 0.8\src\build\output\BugNET.Providers.TextboxHtmlEditorProvider.dll
+C:\Projects\BugNET 0.8\src\build\output\BugNET.Providers.TextboxHtmlEditorProvider.pdb
+C:\Projects\BugNET 0.8\src\Library\Providers\HtmlEditorProviders\TextboxHtmlProvider\obj\Release\ResolveAssemblyReference.cache
+C:\Projects\BugNET 0.8\src\Library\Providers\HtmlEditorProviders\TextboxHtmlProvider\obj\Release\BugNET.Providers.TextboxHtmlEditorProvider.dll
+C:\Projects\BugNET 0.8\src\Library\Providers\HtmlEditorProviders\TextboxHtmlProvider\obj\Release\BugNET.Providers.TextboxHtmlEditorProvider.pdb
